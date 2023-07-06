@@ -20,14 +20,13 @@ export const ProfileStyled = styled.div`
     width: 200px;
     border-radius: 50%;
   }
- 
 `;
 export const NameStyled = styled.p`
   color: black;
   font-size: 50px;
   font-weight: 700;
-  margin-top:0;
-  margin-bottom:20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 `;
 
 export const Stats = styled.ul`

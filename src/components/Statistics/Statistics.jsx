@@ -5,7 +5,7 @@ const Statistics = (props) =>{
         return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
       }
     return(<StatisticsStyled>
-        <h2 className="title">Upload stats</h2>
+        <h2 className="title">UPLOAD STATS</h2>
         <ul className="stat-list">
             {props.stats.map(data => {
                 return(
@@ -21,10 +21,16 @@ const Statistics = (props) =>{
 }
 
 Statistics.propTypes = {
-    stats: PropTypes.array,
-    id: PropTypes.string,    
-    label: PropTypes.string,
-    percentage: PropTypes.number
+    id: PropTypes.string.isRequired,    
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired
+        })
+    ).isRequired
 }
 
 export default Statistics;
