@@ -8,13 +8,7 @@ export const StatisticsStyled = styled.section`
   margin-bottom: 70px;
   border-radius: 8px;
   overflow: hidden;
-  h2 {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    font-size: 36px;
-    font-weight: 700;
-  }
+  
   ul {
     list-style: none;
     display: flex;
@@ -33,6 +27,14 @@ export const StatisticsStyled = styled.section`
     font-size: 24px;
   }
 `;
+export const Title = styled.h2`
+margin: 0;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 36px;
+    font-weight: 700;
+`
+
 export const StatisticsLi = styled.li`
   background-color: ${({ color }) => color};
 `;
