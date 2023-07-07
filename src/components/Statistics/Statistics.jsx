@@ -22,6 +22,7 @@ const Statistics = (props) =>{
 }
 
 Statistics.propTypes = {
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
